@@ -2,11 +2,20 @@
 
 An [Ansible](https://www.ansible.com) role to configure [Canonical Landscape Client](https://landscape.canonical.com/) on Ubuntu.
 
-![Codacy grade](https://img.shields.io/codacy/grade/1a892d499efd4dabb73beffa8d64ed01?logo=codacy&style=flat-square)
-[![[github](https://github.com/dgibbs64/ansible-role-landscape_client/workflows/Ansible%20Molecule/badge.svg)](https://img.shields.io/github/workflow/status/dgibbs64/ansible-role-landscape_client/Ansible%20Molecule?label=molecule&logo=ansible&style=flat-square)](https://github.com/dgibbs64/ansible-role-landscape_client/actions)
-[![[quality](https://img.shields.io/ansible/quality/59356)](https://img.shields.io/ansible/quality/59356?logo=ansible&style=flat-square)](https://galaxy.ansible.com/dgibbs64/landscape_client)
-[![[downloads](https://img.shields.io/ansible/role/d/59356)](https://img.shields.io/ansible/role/d/59356?color=EE0000&logo=ansible&style=flat-square)](https://galaxy.ansible.com/dgibbs64/landscape_client)
-[![[Version](https://img.shields.io/github/release/dgibbs64/ansible-role-landscape_client.svg)](https://img.shields.io/github/v/release/dgibbs64/ansible-role-landscape_client?logo=github&style=flat-square)](https://github.com/dgibbs64/landscape_client/releases/)
+<p align="center">
+  <a href="https://ubuntu.com/landscape"><img src="https://user-images.githubusercontent.com/4478206/198877394-eb340178-bd86-4736-be24-77011ae89122.png" alt="SteamCMD"></a>
+
+<br>
+</p>
+<p align="center">
+<a href="https://app.codacy.com/gh/dgibbs64/ansible-role-landscape_client"><img src="https://img.shields.io/codacy/grade/1a892d499efd4dabb73beffa8d64ed01?logo=codacy&style=flat-square" alt="Codacy grade"></a>
+<a href="https://github.com/dgibbs64/ansible-role-landscape_client/actions/workflows/molecule.yml"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/dgibbs64/ansible-role-landscape_client/Ansible%20Molecule?label=molecule&logo=ansible&style=flat-square"></a>
+<a href="https://galaxy.ansible.com/dgibbs64/landscape_client"><img alt="Ansible Quality Score" src="https://img.shields.io/ansible/quality/59356?logo=ansible&style=flat-square"></a>
+<a href="https://galaxy.ansible.com/dgibbs64/landscape_client"><img alt="Ansible Role" src="https://img.shields.io/ansible/role/d/59356?color=EE0000&logo=ansible&style=flat-square"></a>
+<a href="https://galaxy.ansible.com/dgibbs64/landscape_client"><img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/dgibbs64/ansible-role-landscape_client?logo=ansible&logoColor=github&style=flat-square"></a>
+<a href="/LICENSE.md"><img src="https://img.shields.io/github/license/gameservermanagers/docker-steamcmd?style=flat-square" alt="MIT License"></a>
+</p>
+
 
 ## Requirements
 
