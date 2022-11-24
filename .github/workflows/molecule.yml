@@ -1,8 +1,4 @@
 ---
-#
-# Ansible managed
-#
-
 name: Ansible Molecule
 on:
   push:
@@ -12,7 +8,7 @@ on:
 
 jobs:
   lint:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v3
@@ -21,30 +17,21 @@ jobs:
   test:
     needs:
       - lint
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
+    continue-on-error: true
     strategy:
-      fail-fast: false
       matrix:
-        config:
-          - image: "ubuntu"
-            tag: "latest"
-          - image: "ubuntu"
-            tag: "focal"
-          - image: "ubuntu"
-            tag: "bionic"
-          - image: "rockylinux"
-            tag: "latest"
+        image:
+          - ubuntu2204
+          - ubuntu2004
+          - ubuntu1804
     steps:
       - name: checkout
         uses: actions/checkout@v3
         with:
           path: "${{ github.repository }}"
-      - name: disable apparmor for mysql
-        run: sudo ln -s /etc/apparmor.d/usr.sbin.mysqld /etc/apparmor.d/disable/
-      - name: parse apparmor for mysql
-        run: sudo apparmor_parser -R /etc/apparmor.d/usr.sbin.mysqld
       - name: molecule
         uses: robertdebock/molecule-action@4.0.9
         with:
-          image: ${{ matrix.config.image }}
-          tag: ${{ matrix.config.tag }}
+          image: "${{ matrix.image }}"
+          options: parallel

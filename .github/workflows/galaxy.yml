@@ -1,8 +1,4 @@
 ---
-#
-# Ansible managed
-#
-
 name: Release to Ansible Galaxy
 on:
   release:
