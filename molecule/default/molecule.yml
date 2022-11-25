@@ -8,7 +8,7 @@ lint: |
   yamllint .
   ansible-lint
 platforms:
-  - name: "landscape-client-${image:-ubuntu2004}-${tag:-latest}${TOX_ENVNAME}"
+  - name: "landscape-client-${image:-ubuntu2004}-${tag:-latest}"
     image: geerlingguy/docker-${image:-ubuntu2004}-ansible:${tag:-latest}
     command: ""
     volumes:
