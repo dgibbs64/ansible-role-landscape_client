@@ -4,7 +4,7 @@ galaxy_info:
   company: none
   description: Canonical Landscape Client for Ubuntu.
   license: MIT
-  min_ansible_version: "2.10"
+  min_ansible_version: "2.12"
   namespace: dgibbs64
   role_name: landscape_client
 
