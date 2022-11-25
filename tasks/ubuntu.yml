@@ -8,4 +8,5 @@
       - "landscape-client"
       - "python3-pycurl"
       - "python3-openssl"
+      - "python3-cryptography"
     state: "present"
