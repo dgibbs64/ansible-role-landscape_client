@@ -1,16 +1,19 @@
 ---
 dependency:
   name: galaxy
-driver:
-  name: docker
+  options:
+    role-file: requirements.yml
+    requirements-file: requirements.yml
 lint: |
   set -e
   yamllint .
   ansible-lint
+driver:
+  name: docker
 platforms:
-  - name: "landscape-client-${MOLECULE_DISTRO:-ubuntu2204}-latest"
-    image: geerlingguy/docker-${MOLECULE_DISTRO:-ubuntu2204}-ansible:latest
-    command: ""
+  - name: "${GITHUB_ACTION_REPOSITORY//\//-}-${image:-ubuntu}-${tag:-latest}"
+    image: "${namespace:-dgibbs64}/${image:-ubuntu}:${tag:-latest}"
+    command: /sbin/init
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
     privileged: true
