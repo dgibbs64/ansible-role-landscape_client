@@ -8,8 +8,8 @@ lint: |
   yamllint .
   ansible-lint
 platforms:
-  - name: "landscape-client-${distro:-ubuntu2204}-${tag:-latest}"
-    image: geerlingguy/docker-${distro:-ubuntu2204}-ansible:${tag:-latest}
+  - name: "landscape-client-${MOLECULE_DISTRO:-ubuntu2204}-latest"
+    image: geerlingguy/docker-${MOLECULE_DISTRO:-ubuntu2204}-ansible:latest
     command: ""
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
