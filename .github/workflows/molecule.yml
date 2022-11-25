@@ -23,7 +23,7 @@ jobs:
     continue-on-error: true
     strategy:
       matrix:
-        image:
+        distro:
           - ubuntu2204
           - ubuntu2004
           - ubuntu1804
@@ -36,7 +36,7 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Install test dependencies.
+      - name: Install test dependencies
         run: pip3 install ansible molecule[docker] docker yamllint ansible-lint
 
       - name: Run Molecule tests
