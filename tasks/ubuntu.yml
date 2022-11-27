@@ -6,7 +6,4 @@
     cache_valid_time: 3600
     name:
       - "landscape-client"
-      - "python3-pycurl"
-      - "python3-openssl"
-      - "python3-cryptography"
     state: "present"

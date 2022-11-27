@@ -1,7 +1,5 @@
 ---
-- name: converge
+- name: "Converge"
   hosts: all
-  gather_facts: true
-
   roles:
     - role: ansible-role-landscape_client
