@@ -1,14 +1,14 @@
 ---
-- name: verify
+- name: "Verify"
   hosts: all
   become: true
   gather_facts: true
 
   tasks:
-    - name: run landscape-client --version
+    - name: "Run landscape-client --version"
       ansible.builtin.command:
         cmd: landscape-client --version
       when: ansible_distribution == "Ubuntu"
 
-    - name: check if connection still works
+    - name: "Check if connection still works"
       ansible.builtin.ping:

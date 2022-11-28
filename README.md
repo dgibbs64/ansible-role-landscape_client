@@ -16,7 +16,6 @@ An [Ansible](https://www.ansible.com) role to configure [Canonical Landscape Cli
 <a href="/LICENSE.md"><img src="https://img.shields.io/github/license/gameservermanagers/docker-steamcmd?style=flat-square" alt="MIT License"></a>
 </p>
 
-
 ## Requirements
 
 Landscape SaaS Account or self-hosted Landscape Server.
