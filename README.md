@@ -12,7 +12,7 @@ An [Ansible](https://www.ansible.com) role to configure [Canonical Landscape Cli
 <a href="https://github.com/dgibbs64/ansible-role-landscape_client/actions/workflows/molecule.yml"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/dgibbs64/ansible-role-landscape_client/Ansible%20Molecule?label=molecule&logo=ansible&style=flat-square"></a>
 <a href="https://galaxy.ansible.com/dgibbs64/landscape_client"><img alt="Ansible Quality Score" src="https://img.shields.io/ansible/quality/59356?logo=ansible&style=flat-square"></a>
 <a href="https://galaxy.ansible.com/dgibbs64/landscape_client"><img alt="Ansible Role" src="https://img.shields.io/ansible/role/d/59356?color=EE0000&logo=ansible&style=flat-square"></a>
-<a href="https://galaxy.ansible.com/dgibbs64/landscape_client"><img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/dgibbs64/ansible-role-landscape_client?logo=ansible&logoColor=github&style=flat-square"></a>
+<a href="https://galaxy.ansible.com/dgibbs64/landscape_client"><img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/dgibbs64/ansible-role-landscape_client?color=EE0000&label=release&logo=ansible&style=flat-square"></a>
 <a href="/LICENSE.md"><img src="https://img.shields.io/github/license/gameservermanagers/docker-steamcmd?style=flat-square" alt="MIT License"></a>
 </p>
 
