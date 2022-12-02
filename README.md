@@ -3,7 +3,7 @@
 An [Ansible](https://www.ansible.com) role to configure [Canonical Landscape Client](https://landscape.canonical.com/) on Ubuntu.
 
 <p align="center">
-  <a href="https://ubuntu.com/landscape"><img src="https://user-images.githubusercontent.com/4478206/198877394-eb340178-bd86-4736-be24-77011ae89122.png" alt="SteamCMD"></a>
+  <a href="https://ubuntu.com/landscape"><img src="https://user-images.githubusercontent.com/4478206/198877394-eb340178-bd86-4736-be24-77011ae89122.png" alt="Landscape"></a>
 
 <br>
 </p>
@@ -13,7 +13,7 @@ An [Ansible](https://www.ansible.com) role to configure [Canonical Landscape Cli
 <a href="https://galaxy.ansible.com/dgibbs64/landscape_client"><img alt="Ansible Quality Score" src="https://img.shields.io/ansible/quality/61042?logo=ansible&style=flat-square"></a>
 <a href="https://galaxy.ansible.com/dgibbs64/landscape_client"><img alt="Ansible Role" src="https://img.shields.io/ansible/role/d/61042?color=EE0000&logo=ansible&style=flat-square"></a>
 <a href="https://galaxy.ansible.com/dgibbs64/landscape_client"><img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/dgibbs64/ansible-role-landscape_client?color=EE0000&label=release&logo=ansible&style=flat-square"></a>
-<a href="/LICENSE.md"><img src="https://img.shields.io/github/license/gameservermanagers/docker-steamcmd?style=flat-square" alt="MIT License"></a>
+<a href="/LICENSE.md"><img src="https://img.shields.io/github/license/dgibbs64/ansible-role-landscape_client?style=flat-square" alt="MIT License"></a>
 </p>
 
 ## Requirements
