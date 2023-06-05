@@ -1,8 +1,18 @@
 ---
-- name: "Ensure landscape client is installed"
-  become: true
+- name: "Gather facts (distribution)"
+  ansible.builtin.setup:
+    gather_subset:
+      - "distribution"
+  when: ansible_facts['ansible_os_family'] is not defined or ansible_facts['ansible_distribution'] is not defined
+
+- name: "Update apt cache (Debian Family)"
   ansible.builtin.apt:
     update_cache: true
     cache_valid_time: 3600
+  when: ansible_os_family == "Debian"
+
+- name: "Ensure landscape client is installed"
+  become: true
+  ansible.builtin.apt:
     name: "landscape-client"
     state: "present"

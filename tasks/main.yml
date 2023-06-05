@@ -1,5 +1,12 @@
 ---
 # tasks file for ansible-role-landscape-client
+
+- name: "Gather facts (distribution)"
+  ansible.builtin.setup:
+    gather_subset:
+      - "distribution"
+  when: ansible_facts['ansible_os_family'] is not defined or ansible_facts['ansible_distribution'] is not defined
+
 - name: "Ubuntu"
   ansible.builtin.include_tasks: ubuntu.yml
   when: ansible_distribution == "Ubuntu"
