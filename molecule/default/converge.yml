@@ -1,5 +1,6 @@
----
 - name: "Converge"
   hosts: all
+  gather_facts: false
+  become: false
   roles:
-    - role: ansible-role-landscape_client
+    - role: "dgibbs64.landscape_client"
