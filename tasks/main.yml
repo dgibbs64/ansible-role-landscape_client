@@ -1,20 +1,21 @@
 ---
-# tasks file for ansible-role-landscape-client
+# tasks file for landscape_client
 
-- name: "Gather facts (distribution)"
+- name: "Gather facts"
   ansible.builtin.setup:
-    gather_subset:
-      - "distribution"
-  when: ansible_facts['ansible_os_family'] is not defined or ansible_facts['ansible_distribution'] is not defined
+  when: ansible_facts|default({}) == {}
 
-- name: "Ubuntu"
-  ansible.builtin.include_tasks: ubuntu.yml
-  when: ansible_distribution == "Ubuntu"
+- name: "Become block"
+  become: true
+  block:
+    - name: "Install Landscape"
+      ansible.builtin.include_tasks: install.yml
+      when: ansible_distribution == "Ubuntu"
 
-- name: "Configure Landscape"
-  ansible.builtin.include_tasks: config.yml
-  when: ansible_distribution == "Ubuntu"
+    - name: "Configure Landscape"
+      ansible.builtin.include_tasks: config.yml
+      when: ansible_distribution == "Ubuntu"
 
-- name: "Register Landscape"
-  ansible.builtin.include_tasks: register.yml
-  when: ansible_distribution == "Ubuntu"
+    - name: "Register Landscape"
+      ansible.builtin.include_tasks: register.yml
+      when: ansible_distribution == "Ubuntu"

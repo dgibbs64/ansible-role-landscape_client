@@ -1,16 +1,15 @@
 ---
 - name: "Check if landscape client is already registered"
-  become: true
   ansible.builtin.stat:
     path: "/etc/landscape/.client_registered"
   register: "_landscape_client_registered_check"
   when: not landscape_client_force_register
 
-- name: "Register landscape client" # noqa no-changed-when
-  become: true
+- name: "Register landscape client"
   ansible.builtin.command: >
     landscape-config --silent
   register: "_landscape_client_registered"
+  changed_when: true
   notify: "Mark client as registered"
   tags:
     - "molecule-notest"

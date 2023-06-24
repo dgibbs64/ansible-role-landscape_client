@@ -1,6 +1,5 @@
 ---
 - name: "Get landscape server SSL public key (self-hosted)"
-  become: true
   ansible.builtin.slurp:
     src: "{{ landscape_client_server_ssl_cert }}"
   register: "_landscape_client_ssl_cert"
@@ -8,7 +7,6 @@
   when: landscape_client_server_self_hosted
 
 - name: "Ensure landscape server SSL public key is set (self-hosted)"
-  become: true
   ansible.builtin.template:
     src: "etc/landscape/server.pem.j2"
     dest: "{{ landscape_client_ssl_cert }}"
@@ -16,7 +14,6 @@
   when: landscape_client_server_self_hosted
 
 - name: "Configure landscape client"
-  become: true
   ansible.builtin.template:
     src: "etc/landscape/client.conf.j2"
     dest: "/etc/landscape/client.conf"
