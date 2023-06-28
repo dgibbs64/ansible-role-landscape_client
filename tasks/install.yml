@@ -1,4 +1,10 @@
 ---
+- name: "Ensure pyopenssl is upgraded"
+  ansible.builtin.pip:
+    name: "pyopenssl"
+    state: "latest"
+  when: ansible_distribution_version == "20.04" or ansible_distribution_version == "18.04"
+
 - name: "Ensure landscape client is installed"
   ansible.builtin.apt:
     name:
