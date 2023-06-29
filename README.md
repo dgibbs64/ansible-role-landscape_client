@@ -16,6 +16,10 @@ An [Ansible](https://www.ansible.com) role to configure [Canonical Landscape Cli
 <a href="https://github.com/dgibbs64/ansible-role-landscape_client/blob/main/LICENSE.md"><img src="https://img.shields.io/github/license/dgibbs64/ansible-role-landscape_client?style=flat-square" alt="MIT License"></a>
 </p>
 
+## About
+
+<a href="https://ubuntu.com/landscape">Landscape</a> is a management and administration tool for Ubuntu provided by Canonical. This role will configure the Landscape client on Ubuntu and link it to either a Landscape SaaS account or a self-hosted Landscape server.
+
 ## Requirements
 
 Landscape SaaS Account or self-hosted Landscape Server.
