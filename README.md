@@ -8,14 +8,13 @@ An [Ansible](https://www.ansible.com) role to configure [Canonical Landscape Cli
 <br>
 </p>
 <p align="center">
-<a href="https://app.codacy.com/gh/dgibbs64/ansible-role-landscape_client"><img src="https://img.shields.io/codacy/grade/1a892d499efd4dabb73beffa8d64ed01?logo=codacy&style=flat-square" alt="Codacy grade"></a>
-<a href="https://github.com/dgibbs64/ansible-role-landscape_client/actions/workflows/molecule.yml"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/dgibbs64/ansible-role-landscape_client/molecule.yml?label=molecule&logo=ansible&style=flat-square"></a> <a href="https://galaxy.ansible.com/dgibbs64/landscape_client"><img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/dgibbs64/ansible-role-landscape_client?color=EE0000&label=release&logo=ansible&style=flat-square"></a>
+<a href="https://app.codacy.com/gh/dgibbs64/ansible-role-landscape_client"><img src="https://img.shields.io/codacy/grade/1a892d499efd4dabb73beffa8d64ed01?logo=codacy&style=flat-square" alt="Codacy grade"></a> <a href="https://github.com/dgibbs64/ansible-role-landscape_client/actions/workflows/molecule.yml"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/dgibbs64/ansible-role-landscape_client/molecule.yml?label=molecule&logo=ansible&style=flat-square"></a> <a href="https://galaxy.ansible.com/dgibbs64/landscape_client"><img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/dgibbs64/ansible-role-landscape_client?color=EE0000&label=release&logo=ansible&style=flat-square"></a>
 <a href="https://github.com/dgibbs64/ansible-role-landscape_client/blob/main/LICENSE.md"><img src="https://img.shields.io/github/license/dgibbs64/ansible-role-landscape_client?style=flat-square" alt="MIT License"></a>
 </p>
 
 ## About
 
-<a href="https://ubuntu.com/landscape">Landscape</a> is a management and administration tool for Ubuntu provided by Canonical. This role will configure the Landscape client on Ubuntu and link it to either a Landscape SaaS account or a self-hosted Landscape server.
+[Landscape](https://ubuntu.com/landscape) is a management and administration tool for Ubuntu provided by Canonical. This role will configure the Landscape client on Ubuntu and link it to either a Landscape SaaS account or a self-hosted Landscape server.
 
 ## Requirements
 
