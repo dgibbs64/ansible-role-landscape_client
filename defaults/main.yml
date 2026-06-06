@@ -2,7 +2,7 @@
 # defaults file for landscape_client
 
 # Landscape server
-landscape_client_server: "{{ (groups.get('landscape_server', [''])[0]) | default('') }}"
+landscape_client_server: "{{ (groups.get('landscape_server', ['localhost'])[0]) | default('localhost') }}"
 
 # Landscape server self-hosted
 landscape_client_server_self_hosted: false
